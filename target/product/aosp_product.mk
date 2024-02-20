@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_product.mk)
 # Default AOSP sounds
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
 
+# Include j audio files
+$(call inherit-product,  vendor/j/config/j_audio.mk)
+
 # Additional settings used in all AOSP builds
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.ringtone?=Ring_Synth_04.ogg \
