@@ -1942,6 +1942,10 @@ function _trigger_build()
 
 function m()
 (
+    cd $ANDROID_BUILD_TOP/j-sdk/aosp-libs
+    chmod +x ./gradlew
+    ./gradlew generateBp
+    cd $ANDROID_BUILD_TOP
     _trigger_build "all-modules" "$@"
 )
 
