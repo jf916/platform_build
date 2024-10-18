@@ -20,6 +20,9 @@
 # does, use base_system_ext.mk).
 $(call inherit-product, $(SRC_TARGET_DIR)/product/media_system_ext.mk)
 
+# i just threw the jOS common config here (i know it is a stupid place but it will do!)
+$(call inherit-product, vendor/j/config/j.mk)
+
 # /system_ext packages
 PRODUCT_PACKAGES += \
     AccessibilityMenu \
