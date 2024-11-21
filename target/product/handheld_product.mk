@@ -23,14 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
 # /product packages
 PRODUCT_PACKAGES += \
     AppStore \
-    Auditor \
     Calendar \
     Camera \
     Contacts \
     DeskClock \
     ExactCalculator \
     Gallery2 \
-    InfoApp \
     LatinIME \
     Music \
     PdfViewerGOS \
